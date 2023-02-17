@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Imported CSS -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Personal Portfolio</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top py-3">
+        <div class="container"><a href="#" class="navbar-brand">Portfolio</a>
+            <button type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
+                class="navbar-toggler navbar-toggler-right"><i class="fas fa-bars"></i></button>
+
+            <div id="navbarSupportedContent" class="collapse navbar-collapse">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active"><a href="#home" class="nav-link nav-hover-effect">Home</a></li>
+                    <li class="nav-item"><a href="#about" class="nav-link nav-hover-effect"><span>About</span></a></li>
+                    <li class="nav-item"><a href="#experience" class="nav-link nav-hover-effect">Experience</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link nav-hover-effect">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header id="home">
+        <div class="container h-100 text-white">
+            <div class="row h-100 align-items-center">
+                <div class="col-12 text-center">
+                    <h1 class="display-4">Atharva Joshi</h1>
+                    <hr>
+                    <p class="lead">Personal Resume</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="about" class="bg-light">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <img src="img/about-img.webp" class="img-fluid" alt="about image">
+                </div>
+                <div class="col-md-6 text-center">
+                    <h2 class="pt-5">About Me</h2>
+                    <p class="lead">
+                        Hi! For those of you who don't know me, my name is Atharva.
+                    </p>
+                    <ul>
+                        <li>Java</li>
+                        <li>C++</li>
+                        <li>Python</li>
+                        <li>MySQL</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience">
+        <div class="row m-0">
+            <div class="col-md-6">
+                <h2 class="text-center">Education</h2>
+                <div class="card mx-auto my-5">
+                    <div class="card-body">
+                        <h5 class="card-title">BBA (Business Analytics)</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Christ University, Pune-Lavasa</h6>
+                        <p class="card-text">2021-Current</p>
+                    </div>
+                </div>
+                <div class="card mx-auto my-5">
+                    <div class="card-body">
+                        <h5 class="card-title">Class 12</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">HSC Board</h6>
+                        <p class="card-text">2021, Percentage - 80%</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <h2 class="text-center">Experience</h2>
+                <div class="card mx-auto my-5">
+                    <div class="card-body">
+                        <h5 class="card-title">Nothing Yet</h5>
+                        <!-- <h6 class="card-subtitle mb-2 text-muted"></h6> -->
+                        <!-- <p class="card-text"></p> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   
+
+    <footer id="contact">
+        <div class="p-5 text-center bg-dark text-white">
+            <a href="mailto:atharvasj2113@gmail.com" style="text-decoration: none; color: greenyellow;">Email me</a> or
+            Connect with me on
+            <i class="fab fa-linkedin px-1" onclick="window.open('https://www.linkedin.com/in/atharva-joshi-2948b4231', '_blank')"></i>
+            or DM me on
+            <i class="fab fa-whatsapp px-1"
+                onclick="window.open('https:\/\/api.whatsapp.com\/send?phone=9673333947', '_blank')"></i>
+        </div>
+    </footer>
+
+    <!-- Imported JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script src="//cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
+
+    <!-- Custom JS -->
+    <script>
+        $(function () {
+            $(window).on("scroll", function () {
+                if ($(window).scrollTop() > 10) {
+                    $(".navbar").addClass("active");
+                } else {
+                    $(".navbar").removeClass("active");
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
